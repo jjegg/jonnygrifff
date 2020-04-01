@@ -76,8 +76,8 @@ color_settings:
 font_settings:
   # font_embed: '<link href="https://fonts.googleapis.com/css?family=VT323&display=swap":300,400,600,700" rel="stylesheet">'
   # custom font in _basic.scss
-  title_font: '"SpotMono", Courier, monospace'
-  body_font: '"SpotMono", Courier, monospace'
+  title_font: '"jonnygrifff", Courier, monospace'
+  body_font: '"jonnygrifff", Courier, monospace'
   regular_weight: 400
   bold_weight: 600
   site_title:
