@@ -1,8 +1,8 @@
 ---
-title: 'Salt Lake City'
-subtitle: 'Wild Wild West'
-date: 2018-06-30 00:00:00
-description: Roaming and photographying the natural beauty and wildlife of western USA.
+title: 'Vieques Puerto Rico'
+subtitle: 'Cockadoodadoo!'
+date: 2018-12-23 00:00:00
+description: Photographying the paradice of Vieques Puerto Rico.
 featured_image: '/images/2018-vieques/00.jpg'
 ---
 
