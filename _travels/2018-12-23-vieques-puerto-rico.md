@@ -19,7 +19,7 @@ featured_image: '/images/2018-vieques/01.jpg'
 <div class="gallery" data-columns="2">
 	<img src="/images/2018-vieques/03.jpg">
 	<img src="/images/2018-vieques/04.jpg">
-	<img src="/images/2018-vieques/-5.jpg">
+	<img src="/images/2018-vieques/05.jpg">
 	<img src="/images/2018-vieques/06.jpg">
 	<img src="/images/2018-vieques/07.jpg">
 	<img src="/images/2018-vieques/08.jpg">
