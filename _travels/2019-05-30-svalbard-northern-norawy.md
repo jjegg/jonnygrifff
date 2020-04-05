@@ -1,7 +1,7 @@
 ---
 title: 'Svalbard'
 subtitle: 'Artic Circle'
-date: 2019-06-30 00:00:00
+date: 2019-05-30 00:00:00
 description: Photographing the northern most part of Norway.
 featured_image: '/images/2019-svalbard/01.jpg'
 ---
