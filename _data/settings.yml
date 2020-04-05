@@ -14,8 +14,8 @@ menu_settings:
     #   url: '/blog/'
     # - title: 'about'
     #   url: '/about'
-    - title: 'contact'
-      url: '/contact'
+    # - title: 'contact'
+    #   url: '/contact'
 
 footer_settings:
   logo_image: 
