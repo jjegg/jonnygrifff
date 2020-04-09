@@ -38,6 +38,6 @@ $@
 #   echo "'$1' is not a known function name" >&2
 #   echo "EXAMPLE COMMAND:" >&2
 #   echo "./namertopia.sh rename directory/of/photos" >&2
-#   echo "./namertopia.sh resize directory/of/photos 1800" >&2
+#   echo "./namertopia.sh resize directory/of/photos 2800" >&2
 #   exit 1
 # fi
