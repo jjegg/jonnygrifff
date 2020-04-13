@@ -13,12 +13,14 @@ setup_mac () {
 
 resize () { 
     echo "starting resizing"
+    
+    echo "saving images to HQ directory"
+    mkdir $1/HQ && cp $1/*.jpg $1/HQ
+
     echo "copying files to $tmp_dir"
-    cp -R $1/. $tmp_dir
-    find $1/. -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec cp '{}' /HQ \;
-    rm $1/*
-    cd $tmp_dir
+    cp -R $1/. $tmp_dir && rm $1/* && cd $tmp_dir
     total=`ls -l . | egrep -c '^-'`
+
     for i in *.jpg; do
         new=$(printf "%02d.jpg" "$a")
         echo "[$a | $total]: Resizing $i to $new"
@@ -29,12 +31,11 @@ resize () {
 
 rename () {
     echo "starting renaming"
+    
     echo "copying files to $tmp_dir"
-    cp -R $1/. $tmp_dir
-    find $1/. -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec cp '{}' /HQ \;
-    rm $1/*
-    cd $tmp_dir
+    cp -R $1/. $tmp_dir && rm $1/* && cd $tmp_dir
     total=`ls -l . | egrep -c '^-'`
+
     for i in *.jpg; do
         new=$(printf "%02d.jpg" "$a")
         echo "[$a | $total]: Renaming $i to $new"
