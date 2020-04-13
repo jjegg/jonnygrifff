@@ -19,9 +19,3 @@ featured_image: '/images/2018-majorca-spain/01.jpg'
 ![](/images/2018-majorca-spain/04.jpg)  
 
 ![](/images/2018-majorca-spain/05.jpg)
-
-![](/images/2018-majorca-spain/06.jpg) 
-
-![](/images/2018-majorca-spain/07.jpg)  
-
-![](/images/2018-majorca-spain/08.jpg)  
