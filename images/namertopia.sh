@@ -18,7 +18,9 @@ resize () {
     mkdir $1/HQ && cp $1/*.jpg $1/HQ
 
     echo "copying files to $tmp_dir"
-    cp -R $1/. $tmp_dir && rm $1/* && cd $tmp_dir
+    cp -R $1/. $tmp_dir 
+    rm $1/* 
+    cd $tmp_dir
     total=`ls -l . | egrep -c '^-'`
 
     for i in *.jpg; do
@@ -33,7 +35,9 @@ rename () {
     echo "starting renaming"
     
     echo "copying files to $tmp_dir"
-    cp -R $1/. $tmp_dir && rm $1/* && cd $tmp_dir
+    cp -R $1/. $tmp_dir
+    rm $1/* 
+    cd $tmp_dir
     total=`ls -l . | egrep -c '^-'`
 
     for i in *.jpg; do
