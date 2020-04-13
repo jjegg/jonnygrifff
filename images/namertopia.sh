@@ -15,6 +15,7 @@ resize () {
     echo "starting resizing"
     echo "copying files to $tmp_dir"
     cp -R $1/. $tmp_dir
+    find $1/. -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec cp '{}' /HQ \;
     rm $1/*
     cd $tmp_dir
     total=`ls -l . | egrep -c '^-'`
@@ -30,6 +31,7 @@ rename () {
     echo "starting renaming"
     echo "copying files to $tmp_dir"
     cp -R $1/. $tmp_dir
+    find $1/. -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec cp '{}' /HQ \;
     rm $1/*
     cd $tmp_dir
     total=`ls -l . | egrep -c '^-'`
