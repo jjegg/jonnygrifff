@@ -32,6 +32,7 @@ featured_image: '/images/2020-slc/01.jpg'
 	<img src="/images/2020-slc/14.jpg">
 	<img src="/images/2020-slc/15.jpg">
 	<img src="/images/2020-slc/16.jpg">
+	<img src="/images/2020-slc/25.jpg">
 </div>
 
 ![](/images/2020-slc/17.jpg)
@@ -46,5 +47,3 @@ featured_image: '/images/2020-slc/01.jpg'
 </div>
 
 ![](/images/2020-slc/24.jpg)
-
-![](/images/2020-slc/25.jpg)
