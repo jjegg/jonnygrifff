@@ -2,6 +2,10 @@
 # rename images
 # bash namertopia.sh path/to/my/images
 
+# global
+tmp_dir=$(mktemp -d -t namertopia-XX)
+a=1
+
 setup_mac () {
    sudo chown -R $(whoami) $(brew --prefix)/* 
    brew install imagemagick
@@ -9,35 +13,41 @@ setup_mac () {
 
 resize () { 
     echo "starting resizing"
-    cd $1
-    a=1
+    echo "copying files to $tmp_dir"
+    cp -R $1/. $tmp_dir
+    rm $1/*
+    cd $tmp_dir
+    total=`ls -l . | egrep -c '^-'`
     for i in *.jpg; do
         new=$(printf "%02d.jpg" "$a")
-        convert "$new[$2x]" "$new"
+        echo "[$a | $total]: Resizing $i to $new"
+        convert "$new[$2x]" "$1/$new"
         let a=a+1
     done
 }
 
 rename () {
-    echo "starting rename"
-    cd $1
-    a=1
-    total=`ls | wc -l`
+    echo "starting renaming"
+    echo "copying files to $tmp_dir"
+    cp -R $1/. $tmp_dir
+    rm $1/*
+    cd $tmp_dir
+    total=`ls -l . | egrep -c '^-'`
     for i in *.jpg; do
-        echo "[$a | $total]: Renaming $i"
         new=$(printf "%02d.jpg" "$a")
-        mv "$i" "$new"
+        echo "[$a | $total]: Renaming $i to $new"
+        mv "$i" "$1/$new"
         let a=a+1
     done
 }
 $@
-# if declare -f "$1" > /dev/null
+
+# if declare "$1" > /dev/null
 # then
 #   "$@"
 # else
-#   echo "'$1' is not a known function name" >&2
-#   echo "EXAMPLE COMMAND:" >&2
-#   echo "./namertopia.sh rename directory/of/photos" >&2
-#   echo "./namertopia.sh resize directory/of/photos 2800" >&2
-#   exit 1
+#   printf "'$1' is not a known function name\n" >&2
+#   printf "EXAMPLE COMMAND:\n" >&2
+#   printf "./namertopia.sh rename directory/of/photos\n" >&2
+#   printf "./namertopia.sh resize directory/of/photos 2800\n" >&2
 # fi
