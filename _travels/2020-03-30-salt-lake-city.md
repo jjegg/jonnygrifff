@@ -1,7 +1,7 @@
 ---
 title: 'Salt Lake City'
 subtitle: 'Wild Wild West'
-date: 2018-06-30 00:00:00
+date: 2020-03-30 00:00:00
 description: Roaming and photographying the natural beauty and wildlife of western USA.
 featured_image: '/images/2020-slc/01.jpg'
 ---
