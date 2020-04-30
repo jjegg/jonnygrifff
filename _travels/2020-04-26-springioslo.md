@@ -30,8 +30,6 @@ featured_image: '/images/2020-springioslo/01.jpg'
 
 >  black-headed gul
 
-<div class="gallery" data-columns="2">
-	<img src="/images/2020-springioslo/10.jpg">
-	<img src="/images/2020-springioslo/11.jpg">
-	<img src="/images/2020-springioslo/12.jpg">
-</div>
+![](/images/2020-springioslo/10.jpg) 
+
+![](/images/2020-springioslo/12.jpg)
