@@ -2,7 +2,7 @@
 title: 'Faroe Islands'
 subtitle: 'Faroe Islands'
 date: 2018-09-21 00:00:00
-description: Roaming and photographying the natural beauty and wildlife of Faroe Islands.
+description: Roaming and photographing the natural beauty and wildlife of Faroe Islands.
 featured_image: '/images/2018-faroe-islands/puffins/01.jpg'
 ---
 
