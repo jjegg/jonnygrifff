@@ -1,19 +1,21 @@
 ---
-title: 'A fall hike in Norway'
+title: 'A fall hike in Eggedal Norway'
 subtitle: 'fall hikes'
 date: 2020-10-01 00:00:00
-description: Hiking in western Norway overlooking the purple and pink blueberry bushes, yellow trees, and still water.
+description: Hiking in Eggedal Norway overlooking the purple and pink blueberry bushes, yellow trees, and still water.
 featured_image: '/images/2020-fall-hike/03.jpg'
 ---
 
-> "The mountains are filled with purple and red blueberry bushes"
+> hiking on the burgundy Norwegian mountains in beautiful weather
+
+- hike link [https://goo.gl/maps/E726itHojksNbwuv7](https://goo.gl/maps/E726itHojksNbwuv7)
+
+![](/images/2020-fall-hike/07.jpg)  
 
 <div class="gallery" data-columns="2">
 	<img src="/images/2020-fall-hike/01.jpg">
 	<img src="/images/2020-fall-hike/02.jpg">
 </div>
-
-![](/images/2020-fall-hike/07.jpg)  
 
 ![](/images/2020-fall-hike/03.jpg)  
 
