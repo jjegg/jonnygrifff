@@ -9,6 +9,7 @@
 
 # global
 tmp_dir=$(mktemp -d -t namertopia-XX)
+# tmp_dir=/var/folders/k8/0p5f5fvx2bb0fb4b96603mx80000gn/T/namertopia-XX.a12OxkB9
 a=1
 
 setup_mac () {
@@ -44,13 +45,16 @@ rename () {
     echo "copying files to $tmp_dir"
     cp -R $1/. $tmp_dir
     rm $1/* 
-    cd $tmp_dir
+    full_path=`pwd`
     total=`ls -l . | egrep -c '^-'`
 
-    for i in *.jpg; do
+    for i in $tmp_dir/*.jpg; do
         new=$(printf "%02d.jpg" "$a")
         echo "[$a | $total]: Renaming $i to $new"
-        mv "$i" "$1/$new"
+        echo "cp "$i" "$tmp_dir/$new""
+        cp "$i" "$tmp_dir/$new"
+        echo "mv "$tmp_dir/$new" "$full_path/$1/""
+        mv "$tmp_dir/$new" "$full_path/$1/"
         let a=a+1
     done
 }
